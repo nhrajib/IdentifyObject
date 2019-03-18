@@ -1,3 +1,4 @@
+package WebElements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,6 +15,8 @@ public class DynamicDropDownList {
 		Thread.sleep(2000);
 		//driver.findElement(By.xpath("(//a[@value='JAI'])[2]")).click(); //index method
 		driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR']//a[@value='JAI']")).click(); //Parent-Child method
+		
+		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click(); //Click on highlighted date
 
 	}
 
